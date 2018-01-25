@@ -1,0 +1,185 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="equity.com.fourgr.fragments.SubmissionDetailsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/details_layout">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1">
+
+                <TableRow
+                    android:paddingTop="@dimen/submission_item_margin_bottom"
+                    android:paddingBottom="@dimen/submission_item_margin_bottom">
+                    <TextView
+                        android:padding="3dip"
+                        android:text="Submission Date"
+                        android:textColor="@color/colorPrimary"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/details_size"
+                        />
+                    <TextView
+                        android:padding="3dip"
+                        android:id="@+id/submission_date"
+                        android:text="2017-07-21"
+                        android:textSize="@dimen/details_size"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:paddingTop="@dimen/submission_item_margin_bottom"
+                    android:paddingBottom="@dimen/submission_item_margin_bottom">
+                    <TextView
+                        android:padding="3dip"
+                        android:text="First Name"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/details_size"
+                        android:textAllCaps="true"
+                        />
+                    <TextView
+                        android:padding="3dip"
+                        android:id="@+id/firstname"
+                        android:text="12 x 10"
+                        android:textSize="@dimen/details_size"
+                        />
+                </TableRow>
+                <TableRow
+                    android:paddingTop="@dimen/submission_item_margin_bottom"
+                    android:paddingBottom="@dimen/submission_item_margin_bottom">
+                    <TextView
+                        android:padding="3dip"
+                        android:text="Last Name"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/details_size"
+                        android:textAllCaps="true"
+                        />
+                    <TextView
+                        android:padding="3dip"
+                        android:id="@+id/lastname"
+                        android:text="12 x 10"
+                        android:textSize="@dimen/details_size"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:paddingTop="@dimen/submission_item_margin_bottom"
+                    android:paddingBottom="@dimen/submission_item_margin_bottom">
+                    <TextView
+                        android:padding="3dip"
+                        android:text="Refugee ID Number"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/details_size"
+                        android:textAllCaps="true"
+                        />
+                    <TextView
+                        android:padding="3dip"
+                        android:id="@+id/refugeeId"
+                        android:text="12 x 10"
+                        android:textSize="@dimen/details_size"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:paddingTop="@dimen/submission_item_margin_bottom"
+                    android:paddingBottom="@dimen/submission_item_margin_bottom">
+                    <TextView
+                        android:padding="3dip"
+                        android:text="Camp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/details_size"
+                        android:textAllCaps="true"
+                        />
+                    <TextView
+                        android:padding="3dip"
+                        android:id="@+id/camp"
+                        android:text="12 x 10"
+                        android:textSize="@dimen/details_size"
+                        />
+                </TableRow>
+
+
+                <TableRow
+                    android:paddingTop="@dimen/submission_item_margin_bottom"
+                    android:paddingBottom="@dimen/submission_item_margin_bottom">
+                    <TextView
+                        android:padding="3dip"
+                        android:text="Town"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/details_size"
+                        android:textAllCaps="true"
+                        />
+                    <TextView
+                        android:padding="3dip"
+                        android:id="@+id/town"
+                        android:text="Kakamega"
+                        android:textSize="@dimen/details_size"
+                        />
+                </TableRow>
+
+
+                <TableRow
+                    android:paddingTop="@dimen/submission_item_margin_bottom"
+                    android:paddingBottom="@dimen/submission_item_margin_bottom">
+                    <TextView
+                        android:padding="3dip"
+                        android:text="Structure"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/details_size"
+                        android:textAllCaps="true"
+                        />
+                    <TextView
+                        android:padding="3dip"
+                        android:id="@+id/structure"
+                        android:text="12 x 10"
+                        android:textSize="@dimen/details_size"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:paddingTop="@dimen/submission_item_margin_bottom"
+                    android:paddingBottom="@dimen/submission_item_margin_bottom">
+                    <TextView
+                        android:padding="3dip"
+                        android:text="Are you attending any school?"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/details_size"
+                        android:textAllCaps="true"
+                        />
+                    <TextView
+                        android:padding="3dip"
+                        android:id="@+id/spinner1"
+                        android:text="No"
+                        android:textSize="@dimen/details_size"
+                        />
+                </TableRow>
+
+            </TableLayout>
+            <TextView
+                android:layout_marginTop="@dimen/submission_item_margin_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="if, Yes which school?"
+                android:textSize="@dimen/details_size"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/other_comments"
+                android:textSize="@dimen/details_size"
+                android:text="Sample comment"/>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

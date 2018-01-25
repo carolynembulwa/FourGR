@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".SubmissionPhotosActivity"
+    tools:showIn="@layout/activity_submission_photos">
+    <GridView
+        android:id="@+id/photo_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawSelectorOnTop="true"
+        android:gravity="center"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_margin="5dp"
+        android:columnWidth="@dimen/photo_grid_column_width"/>
+
+    <LinearLayout
+        android:id="@+id/no_photos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:padding="8dp"
+        android:layout_gravity="center">
+        <ImageView
+            android:src="@drawable/ic_empty_white_box"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:tint="#BDBDBD"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/empty_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="No Photos yet!"
+            android:textColor="#BDBDBD"
+            android:textSize="24sp"
+            android:layout_marginBottom="16dp"/>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
