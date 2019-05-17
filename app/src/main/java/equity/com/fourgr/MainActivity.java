@@ -19,6 +19,9 @@ import equity.com.fourgr.app.MyApp;
 import equity.com.fourgr.db.DatabaseHandler;
 import equity.com.fourgr.helper.DataInitializer;
 import equity.com.fourgr.model.Menu;
+import com.microsoft.appcenter.AppCenter; 
+import com.microsoft.appcenter.analytics.Analytics; 
+import com.microsoft.appcenter.crashes.Crashes;
 
 public class MainActivity extends AppCompatActivity {
     Bus bus = MyApp.getBus();
@@ -52,6 +55,8 @@ public class MainActivity extends AppCompatActivity {
 
         RecyclerViewAdapter adapter = new RecyclerViewAdapter(menuList, this, this);
         rv.setAdapter(adapter);
+        
+        AppCenter.start(getApplication(), "518611cd-2ee9-4ade-a2c4-87c172b78875", Analytics.class, Crashes.class);
     }
 
     public void initialize(Context context){
